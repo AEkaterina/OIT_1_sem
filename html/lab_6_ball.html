@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <style type='text/css'>
+        body {
+            background: black;
+        }
+        #ball{
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            border-radius: 100%;
+            background: rgb(157, 149, 231);
+            animation: jump 4s linear infinite;
+        }
+        @keyframes jump {
+            0% {
+                bottom: 100%;
+            }
+            25% {
+                bottom: 0;
+                width: 100px;
+                height: 100px;
+                background: rgb(66, 64, 187);
+            }
+            30% {
+                bottom: 0;
+                width: 110px;              
+                height: 25px;
+                background: rgb(19, 2, 116);
+            }
+            35% {
+                bottom: 0;
+                width: 100px;
+                height: 100px;
+            }
+            50% {
+                bottom: 50%;
+                background: rgb(66, 64, 187);
+            }
+            70% {
+                bottom: 100%;
+                background: rgb(157, 149, 231);
+            }
+            100% {
+                bottom: 100%;
+            }
+        }
+        </style>
+    </head>
+    <body>
+     <div id="ball"></div>
+    </body>
+</html>

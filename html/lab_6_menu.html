@@ -1,0 +1,114 @@
+<html>
+<head>
+<title>Моя первая страница</title>
+<link rel="stylesheet" type="text/css" href="style.css" >
+<style type="text/css">
+body {
+  margin: 0;
+  background:floralwhite;
+}
+nav {
+  display: table;
+  margin: 0 auto;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.topmenu:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.topmenu > li {
+  width: 25%;
+  float: left;
+  position: relative;
+  font-family: 'Open Sans', sans-serif;
+}
+.topmenu > li > a {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  color: #33064d;
+  padding: 15px 30px;
+}
+.topmenu li a:hover { color: rgb(183, 102, 230); }
+.submenu-link:after {
+  content: "\f107";
+  font-family: "FontAwesome";
+  color: inherit;
+  margin-left: 10px;
+}
+.submenu {
+  background: bisque;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  z-index: 5;
+  width: 180px;
+  opacity: 0;
+  transform: scaleY(0);
+  transform-origin: 0 0;
+  transition: .5s ease-in-out;
+}
+.submenu a {
+  color: black;
+  text-align: left;
+  padding: 12px 15px;
+  font-size: 13px;
+  border-bottom: 1px solid rgba(255,255,255,.1);
+}
+.submenu li:last-child a { border-bottom: none; }
+.topmenu > li:hover .submenu {
+  opacity: 1;
+  transform: scaleY(1);
+}
+</style>
+</head>
+<body> 
+<nav>
+    <ul class="topmenu">
+      <li><a href="" class="submenu-link">Лабораторная работа 1</a>
+       <ul class="submenu">
+        <li><a href="lab_1.html">Страница 1</a></li>
+        <li><a href="lab_1_2.html">Страница 2</a></li>
+       </ul>
+      </li>                      
+      <li><a href="" class="submenu-link">Лабораторная работа 2</a>
+       <ul class="submenu">
+        <li><a href="lab_1.html">Страница 1</a></li>
+        <li><a href="lab_1_2.html">Страница 2</a></li>
+       </ul>
+       </li>
+       <li><a href="" class="submenu-link">Лабораторная работа 3</a>
+        <ul class="submenu">
+         <li><a href="lab_3.html">Страница 1</a></li>
+        </ul>
+       </li>
+       <li><a href="" class="submenu-link">Лабораторная работа 4</a>
+        <ul class="submenu">
+         <li><a href="lab_4.html">Страница 1</a></li>
+         <li><a href="lab_4_3.html">Страница 2</a></li>
+        </ul>
+       </li>
+       <li><a href="" class="submenu-link">Лабораторная работа 5</a>
+        <ul class="submenu">
+         <li><a href="lab_5_1.html">Страница 1</a></li>
+         <li><a href="lab_5_2.html">Страница 2</a></li>
+         <li><a href="">Сервис</a></li>
+        </ul>
+        </li>
+        <li><a href="" class="submenu-link">Лабораторная работа 6</a>
+         <ul class="submenu">
+          <li><a href="lab_6_1.html">Пример 1</a></li>
+          <li><a href="lab6_1.html">Пример 2</a></li>
+          <li><a href="lab_6_ball.html">Мячик</a></li>
+        <li><a href="lab_6_sun.html">Солнце</a></li>
+        </ul>
+      </li>
+    </ul>
+</nav>
+</body>
+</html>
